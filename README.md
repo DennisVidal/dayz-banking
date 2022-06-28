@@ -225,4 +225,4 @@ If there are no errors in your config check that you didn't set a float value in
 
 Similarly setting the currency limit to anything close to the maximum representable integer value (2,147,483,647) will likely lead to problems as well.
 
-In case none of the above is the case, feel free to add me on either Discord(Deadcraft#8378) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to help you assist you with the problem.
+In case none of the above is the case, feel free to add me on either Discord(Deadcraft#8378) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to assist you with the problem.
