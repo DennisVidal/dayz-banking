@@ -20,7 +20,7 @@ Alternatively, it's probably easier to just use either DayZ's launcher or the [D
 1. Download the mod from the [workshop page](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking")
 2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to the `-mod` launch parameter of your server
 3. Start your server to generate the config file in your server's profile folder
-4. Adjust the values in the config to your liking
+4. Adjust the values in the config to your liking and spawn ATMs wherever you want
 5. Start your server again
 
 ---
