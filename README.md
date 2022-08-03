@@ -2,6 +2,8 @@
 
 ![An image of the ATMs in the Banking mod](https://github.com/DennisVidal/DayZ-Banking/blob/main/DayZ_Mod_Banking.png)
 
+<b>Note:</b> The code for this mod isn't the best and a rework is long overdue. Although I've worked on it a while ago, I haven't gotten around to finishing it yet. Once I got more information I'll update the workshop page.
+
 ## What does this mod do?
 This mod adds a simple banking system to DayZ. More specifically it adds ATMs that can be placed around the map. Through these ATMs players can deposit and withdraw the configured currency. That way they don't have to carry it on them at all times or stash it in their base. The mod can be found [here](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking").
 
