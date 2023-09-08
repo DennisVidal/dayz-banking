@@ -1,4 +1,4 @@
-# DayZ-Banking
+# DayZ Banking
 
 ![An image of the ATMs in the Banking mod](https://github.com/DennisVidal/DayZ-Banking/blob/main/DayZ_Mod_Banking.png)
 
