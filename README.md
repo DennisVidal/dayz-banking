@@ -239,7 +239,7 @@ Similarly setting the currency limit to anything close to the maximum representa
 In case none of the above is the case, feel free to add me on either Discord(deadcraft) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to assist you with the problem.
 
 ---
-## Usage
+## Usage & Monetization
 
 - Distributing, reuploading and repacking of this mod or any of its contents is not allowed
 - Derivatives and modifications of this mod require my prior permission
