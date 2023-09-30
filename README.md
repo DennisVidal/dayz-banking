@@ -102,6 +102,85 @@ The probably easiest approach to find both the position and orientation for an A
 
 A more in-depth description of how to spawn objects in general using this method can be found [here](https://github.com/Arkensor/DayZCommunityOfflineMode/wiki/Add-custom-objects-to-your-server-or-mission "Adding custom objects section of the Community Offline Mode").
 
+### Example Locations
+The following are some example locations for ATMs that you can use to get you started:
+<table>
+  <thead>
+    <tr>
+      <th>Location Name</th>
+      <th>Position</th>
+      <th>Orientation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Green Mountain 1</td>
+      <td>"3706.7 402.012 5984.86"</td>
+      <td>"90 0 0"</td>
+    </tr>
+    <tr>
+      <td>Green Mountain 2</td>
+      <td>"3704.7 402.332 6003.1"</td>
+      <td>"275 0 0"</td>
+    </tr>
+     <tr>
+      <td>Kumyrna 1</td>
+      <td>"8360.15 292.054 5994.15"</td>
+      <td>"325 0 0"</td>
+    </tr>
+    <tr>
+      <td>Kumyrna 2</td>
+      <td>"8350.7 292.011 5978.3"</td>
+      <td>"235 0 0"</td>
+    </tr>
+    <tr>
+      <td>Stary</td>
+      <td>"6262.1 301.012 7725.4"</td>
+      <td>"35 0 0"</td>
+    </tr>
+    <tr>
+      <td>Klen</td>
+      <td>"11477.8 341.941 11341.6"</td>
+      <td>"35 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Funfair 1</td>
+      <td>"13326.677 6.065 6766.269"</td>
+      <td>"-20 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Funfair 2</td>
+      <td>"13345.848 6.0347 6739.655"</td>
+      <td>"75 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Funfair 3</td>
+      <td>"13349.243 5.360 6703.152"</td>
+      <td>"160 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Funfair 4</td>
+      <td>"13324.538 6.166 6765.517"</td>
+      <td>"-20 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Prison 1</td>
+      <td>"9164.450 93.925 13163.900"</td>
+      <td>"50 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Prison 2</td>
+      <td>"9172.360 90.937 13229.300"</td>
+      <td>"-45 0 0"</td>
+    </tr>
+    <tr>
+      <td>PMC Trader Camp</td>
+      <td>"172.014 472.759 11316.481"</td>
+      <td>"35 0 0"</td>
+    </tr>
+  </tbody>
+</table>
+
 ---
 ## Configuration
 ### Config
@@ -253,4 +332,4 @@ In case none of the above is the case, feel free to add me on either Discord(dea
 - Distributing, reuploading and repacking of this mod or any of its contents is not allowed
 - Derivatives and modifications of this mod require my prior permission
 - Monetizing features of this mod, e.g. selling increases in maximum storable currency, is prohibited
-- Should your server break Bohemia Interactive's monetization guidelines in any way, you are also prohibited from using this mod on your server
+- Should your server break [Bohemia Interactive's monetization guidelines](https://www.bohemia.net/monetization "Bohemia Interactive's monetization guidelines") in any way, you are also prohibited from using this mod on your server
