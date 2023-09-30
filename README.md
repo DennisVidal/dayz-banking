@@ -43,7 +43,7 @@ Alternatively, it's probably easier and faster to just use either DayZ's launche
 ## Spawning the ATMs
 There are many ways to spawn objects in DayZ and mods that do it for you. As the ATMs are just generic objects with an action attached to them, they don't need any special setup and any way or mod that lets you spawn persistent objects should work. The spawn method described here doesn't require any other mods, you just have to add a function to your server's init file and then spawn the ATMs using that function:
 1. Open the `init.c` file in your server's mission folder,
-2. Add the following above the `main` function: 
+2. Add the following function above the `main` function to wrap the object setup and makes it easier to spawn objects down the line: 
 ```cs
 void SpawnObject(string className, vector position, vector orientation)
 {
@@ -63,8 +63,6 @@ void SpawnObject(string className, vector position, vector orientation)
     }
 }
 ```
-This function just wraps the object setup and makes it easier to spawn objects down the line.
-
 3. Spawn the ATMs using the above function in `main`:
 ```cs
 void main()
