@@ -4,7 +4,7 @@
 
 
 This mod adds a banking system to DayZ with the aim of adding a new layer to the gameplay loop and improve the overall experience for players. It consists of ATMs that can be placed freely around the map by server owners which players can interact with to deposit their money before heading out exploring and withdraw some when gearing up at a trader.
-The mod essentially enables the accumulation of wealth securely over time and across deaths, not only allowing players with enough saved up money to obtain equipment from traders more quickly without having to spend hours searching for it around the map, but also making it possible for server owners to add higher tiered, more expensive items to traders which wouldn't be feasable without some sort of meta progression.
+The mod essentially enables the accumulation of wealth securely over time and across deaths, not only allowing players with enough saved up money to obtain equipment from traders more quickly without having to spend hours searching for it around the map, but also making it possible for server owners to add higher tiered, more expensive items to traders to provide long term goals, which wouldn't be feasable without some sort of meta progression.
 
 ---
 ## Features
