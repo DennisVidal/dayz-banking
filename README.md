@@ -9,7 +9,6 @@ The mod essentially enables the accumulation of wealth securely over time and ac
 
 ---
 ## Core Features
-The core features of this mod include:
 - A row of placeable ATMs that players can interact with
 - The ability for players to withdraw and deposit money into virtual banking accounts
 - Configurable currency to fit whatever mod your server is using
