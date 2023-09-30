@@ -7,6 +7,17 @@ This mod adds a banking system to DayZ with the aim of adding a new layer to the
 The mod essentially enables the accumulation of wealth securely over time and across deaths, not only allowing players to obtain equipment from traders more easily without having to spend hours searching for it around the map, but also making it possible for server owners to add higher tiered, more expensive items to traders which wouldn't be feasable without some sort of meta progression.
 
 ---
+## Features
+The core features of this mod include:
+- A row of placeable ATMs that players can interact with
+- The ability for players to withdraw and deposit money to virtual banking accounts
+- Configurable currency to fit whatever mod your server is using
+- Adjustable currency limits for the maximum storable currency and individual bonuses (e.g. for event winners)
+- A customizable amount of money that players start with
+- An easily editable config and run-time editable banking account data for individual players
+
+
+---
 ## Requirements
 - This mod currently uses the [Community Framework](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of the Community Framework") to streamline the networking and as such it is required to run the mod.
 - As this mod doesn't include any kind of currency, some sort of Currency/Trader mod is needed. Since the [Trader mod by Dr_J0nes](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) is widely used, its rubles are used as the default currency. This isn't a dependency though and can be easily adjusted by changing the currency class names and corresponding values in the config.
