@@ -2,50 +2,59 @@
 
 ![An image of the ATMs in the Banking mod](https://github.com/DennisVidal/DayZ-Banking/blob/main/DayZ_Mod_Banking.png)
 
-<b>Note:</b> The code for this mod isn't the best and a rework is long overdue. Although I've worked on it a while ago, I haven't gotten around to finishing it yet. Once I got more information I'll update the workshop page.
 
-## What does this mod do?
-This mod adds a simple banking system to DayZ. More specifically it adds ATMs that can be placed around the map. Through these ATMs players can deposit and withdraw the configured currency. That way they don't have to carry it on them at all times or stash it in their base. The mod can be found [here](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking").
-
-This mod requires [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") to be loaded as well. The currency items themselves aren't part of this mod. Instead, the currency of the [Trader mod by Dr_J0nes](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) is used by default as it is widely used. Should you use a different mod you can adjust the currency easily in the config.
+This mod adds a banking system to DayZ with the aim of adding a new layer to the gameplay loop and improve the overall experience for players. It consists of ATMs that can be placed freely around the map by server owners which players can interact with to deposit their money before heading out exploring and withdraw some when gearing up at a trader.
+The mod essentially enables the accumulation of wealth securely over time and across deaths, not only allowing players to obtain equipment from traders more easily without having to spend hours searching for it around the map, but also making it possible for server owners to add higher tiered, more expensive items to traders which wouldn't be feasable without some sort of meta progression.
 
 ---
-## How do I set up this mod?
+## Requirements
+- This mod currently uses the [Community Framework](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of the Community Framework") to streamline the networking and as such it is required to run the mod.
+- As this mod doesn't include any kind of currency, some sort of Currency/Trader mod is needed. Since the [Trader mod by Dr_J0nes](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) is widely used, its rubles are used as the default currency. This isn't a dependency though and can be easily adjusted by changing the currency class names and corresponding values in the config.
+
+---
+# Setup
 ### Clients
 1. Download the mod from the [workshop page](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking")
-2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to your `-mod` launch parameter
+2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to your `-mod` launch parameter (each mod separated by a ";")
 3. Start your game and join your server
 
-Alternatively, it's probably easier to just use either DayZ's launcher or the [DayZSA launcher](https://dayzsalauncher.com/ "Website of the DayZSA launcher") to join a server.
+Alternatively, it's probably easier and faster to just use either DayZ's launcher or the [DayZSA launcher](https://dayzsalauncher.com/ "Website of the DayZSA launcher") to join a server.
 
 ### Server
 1. Download the mod from the [workshop page](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking")
-2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to the `-mod` launch parameter of your server
+2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to the `-mod` launch parameter of your server (each mod separated by a ";")
 3. Start your server to generate the config file in your server's profile folder
 4. Adjust the values in the config to your liking and spawn ATMs wherever you want
-5. Start your server again
+5. Restart your server to load the new config
+
 
 ---
-## How do I spawn the ATMs?
-There are many ways to spawn the ATMs in. Any way that lets you spawn persistent items or rather buildings should work. The easiest way in my opinion though is to add a function to the init file of your server's mission and spawn the ATMs using that function. If you choose to use this way you can follow the following steps:
-1. Open the `init.c` file in your server's mission folder
+## Spawning the ATMs
+There are many ways to spawn objects in DayZ and mods that do it for you. As the ATMs are just generic objects with an action attached to them, they don't need any special setup and any way or mod that lets you spawn persistent objects should work. The spawn method described here doesn't require any other mods, you just have to add a function to your server's init file and then spawn the ATMs using that function:
+1. Open the `init.c` file in your server's mission folder,
 2. Add the following above the `main` function: 
 ```cs
-void SpawnObject(string type, vector position, vector orientation)
+void SpawnObject(string className, vector position, vector orientation)
 {
-    Object obj = GetGame().CreateObject(type, position);
-    if(!obj)
-      return;
+    Object obj = GetGame().CreateObject(className, position);
+    if(!obj) return;
+    {
+        return;
+    }
     obj.SetPosition(position);
     obj.SetOrientation(orientation);
     obj.SetOrientation(obj.GetOrientation());
     obj.Update();
     obj.SetAffectPathgraph(true, false);
-    if(obj.CanAffectPathgraph()) 
-      GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(GetGame().UpdatePathgraphRegionByObject, 100, false, obj);
+    if(obj.CanAffectPathgraph())
+    {
+        GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(GetGame().UpdatePathgraphRegionByObject, 100, false, obj);
+    }
 }
 ```
-3. Spawn the ATMs using the above function in `main` like this:
+This function just wraps the object setup and makes it easier to spawn objects down the line.
+
+3. Spawn the ATMs using the above function in `main`:
 ```cs
 void main()
 {
@@ -62,33 +71,33 @@ The `SpawnObject` function takes three parameters: a `class name`, a `position` 
 The `class name` of the ATM can be one of the following depending on the variant that you want to spawn: 
 <table>
   <tbody>
-    <td><b>"DC_BankingLocker"</b></td>
-    <td><b>"DC_BankingATM"</b></td>
-    <td><b>"DC_BankingATMRed"</b></td>
-    <td><b>"DC_BankingATMBlue"</b></td>
-    <td><b>"DC_BankingATMDarkGreen"</b></td>
-    <td><b>"DC_BankingATMDarkBlue"</b></td>
-    <td><b>"DC_BankingATMOrange"</b></td>
-    <td><b>"DC_BankingATMYellow"</b></td>
-    <td><b>"DC_BankingATMPurple"</b></td>
-    <td><b>"DC_BankingATMWhite"</b></td>
-    <td><b>"DC_BankingATMGray"</b></td>
+    <tr><td><b>DC_BankingLocker</b></td></tr>
+    <tr><td><b>DC_BankingATM</b></td></tr>
+    <tr><td><b>DC_BankingATMRed</b></td></tr>
+    <tr><td><b>DC_BankingATMBlue</b></td></tr>
+    <tr><td><b>DC_BankingATMDarkGreen</b></td></tr>
+    <tr><td><b>DC_BankingATMDarkBlue</b></td></tr>
+    <tr><td><b>DC_BankingATMOrange</b></td></tr>
+    <tr><td><b>DC_BankingATMYellow</b></td></tr>
+    <tr><td><b>DC_BankingATMPurple</b></td></tr>
+    <tr><td><b>DC_BankingATMWhite</b></td></tr>
+    <tr><td><b>DC_BankingATMGray</b></td></tr>
   </tbody>
 </table>
 
-The `position` parameter is just a vector denoting the world-space position of the ATM. Note that vectors in Enforce are represented by a string in which each component is separated by a space.
+The `position` parameter is a vector denoting the world-space position of the ATM. Note that vectors in Enforce are represented by a string in which each component is separated by a space.
 
 The last parameter `orientation` is the rotation of the object. It is another vector in which each component is the angle in degrees around the corresponding axis. 
 
-The easiest approach to find both the position and orientation for an ATM is probably to use some admin tool to get those values from a fitting location.
+The probably easiest approach to find both the position and orientation for an ATM is to use some admin tool to get those values from a fitting location.
 
 A more in-depth description of how to spawn objects in general using this method can be found [here](https://github.com/Arkensor/DayZCommunityOfflineMode/wiki/Add-custom-objects-to-your-server-or-mission "Adding custom objects section of the Community Offline Mode").
 
 ---
-## How do I configure this mod?
+## Configuration
 ### Config
-After the config file is generated, you can navigate to the profile folder of your server to find the config. If you haven't set a profile folder for your server yet, you might want to consider doing so with the `-profiles` launch parameter, as it makes it easier to find the config and any log files in general. 
-In the profile folder you should find a folder labeled `DC_Banking`. This folder contains both the config and the player data for this mod. The config itself is a normal Json file and can therefore be edited rather easily. The following table explains its contents:
+The config gets created automatically once you start the server for the first time after installing the mod. After the config file has been generated, you can navigate to the server's profile folder to find it. If you haven't set a profile folder for your server yet, you might want to consider doing so with the `-profiles` launch parameter, as it makes it easier to find the config and any log files in general. 
+In the profile folder you should find a folder labeled `DC_Banking`. This folder contains both the config and the player data for this mod. The config itself is a normal json file and can therefore be edited rather easily. The following table explains its contents:
 
 <table>
   <thead>
@@ -179,7 +188,7 @@ In the profile folder you should find a folder labeled `DC_Banking`. This folder
 </table>
 
 ### Player Data
-Similarly to the config the player data is also stored in the `DC_Banking` folder, more specifically in a subfolder called `PlayerDatabase`. Each file in this folder is named after the steamID64 of the corresponding player.
+Similarly to the config, the player data is also stored in the `DC_Banking` folder, more specifically in a subfolder called `PlayerDatabase`. Each file in this folder is named after the steamID64 of the corresponding player.
 
 <table>
   <thead>
@@ -218,13 +227,13 @@ Similarly to the config the player data is also stored in the `DC_Banking` folde
   </tbody>
 </table>
 
+---
+## Troubleshooting
 
-## I'm having some sort of issue with this mod, what can I do?
-
-The cause of most issues is some simple syntax error in the config file. Therefore the first thing you should try is running the config through some Json validator like [this](https://jsonformatter.curiousconcept.com/) one. 
+From my experience the cause of most issues is a simple syntax error in the config file. Therefore the first thing you should try is running the config through some json validator like [this](https://jsonformatter.curiousconcept.com/) one.
 
 If there are no errors in your config check that you didn't set a float value instead of an integer one for certain variables in the config, e.g. setting the value of some currency to 1.0 instead of just 1.
 
 Similarly setting the currency limit to anything close to the maximum representable integer value (2,147,483,647) will likely lead to problems as well.
 
-In case none of the above is the case, feel free to add me on either Discord(Deadcraft#8378) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to assist you with the problem.
+In case none of the above is the case, feel free to add me on either Discord(deadcraft) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to assist you with the problem.
