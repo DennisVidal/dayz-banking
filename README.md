@@ -237,3 +237,11 @@ If there are no errors in your config check that you didn't set a float value in
 Similarly setting the currency limit to anything close to the maximum representable integer value (2,147,483,647) will likely lead to problems as well.
 
 In case none of the above is the case, feel free to add me on either Discord(deadcraft) or [Steam](https://steamcommunity.com/id/Deadcraft "Steam profile of Dennis Vidal") and I'll try to assist you with the problem.
+
+---
+## Usage
+
+- Distributing, reuploading and repacking of this mod or any of its contents is not allowed
+- Derivatives and modifications of this mod require my prior permission
+- Monetizing features of this mod, e.g. selling increases in maximum storable currency, is prohibited
+- Should your server break Bohemia Interactive's monetization guidelines in any way, you are also prohibited from using this mod on your server
