@@ -12,7 +12,7 @@ The mod essentially enables the accumulation of wealth securely over time and ac
 - As this mod doesn't include any kind of currency, some sort of Currency/Trader mod is needed. Since the [Trader mod by Dr_J0nes](https://steamcommunity.com/sharedfiles/filedetails/?id=1590841260) is widely used, its rubles are used as the default currency. This isn't a dependency though and can be easily adjusted by changing the currency class names and corresponding values in the config.
 
 ---
-# Setup
+## Setup
 ### Clients
 1. Download the mod from the [workshop page](https://steamcommunity.com/workshop/filedetails/?id=1836257061 "Steam workshop page of Banking")
 2. Add the mod, [CF](https://steamcommunity.com/workshop/filedetails/?id=1559212036 "Steam workshop page of CF") and any other mods you need to your `-mod` launch parameter (each mod separated by a ";")
