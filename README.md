@@ -63,7 +63,7 @@ void SpawnObject(string className, vector position, vector orientation)
     }
 }
 ```
-3. Spawn the ATMs using the above function in `main`:
+3. Spawn the ATMs using the added `SpawnObject` function in `main`:
 ```cs
 void main()
 {
