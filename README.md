@@ -77,19 +77,19 @@ void main()
 The `SpawnObject` function takes three parameters: a `class name`, a `position`, and an `orientation`.
 
 The `class name` of the ATM can be one of the following, depending on the variant that you want to spawn:
-<table>
+<table align="center">
   <tbody>
-    <tr><td>DC_BankingLocker</td></tr>
-    <tr><td>DC_BankingATM</td></tr>
-    <tr><td>DC_BankingATMRed</td></tr>
-    <tr><td>DC_BankingATMBlue</td></tr>
-    <tr><td>DC_BankingATMDarkGreen</td></tr>
-    <tr><td>DC_BankingATMDarkBlue</td></tr>
-    <tr><td>DC_BankingATMOrange</td></tr>
-    <tr><td>DC_BankingATMYellow</td></tr>
-    <tr><td>DC_BankingATMPurple</td></tr>
-    <tr><td>DC_BankingATMWhite</td></tr>
-    <tr><td>DC_BankingATMGray</td></tr>
+    <tr><td align="center">DC_BankingLocker</td></tr>
+    <tr><td align="center">DC_BankingATM</td></tr>
+    <tr><td align="center">DC_BankingATMRed</td></tr>
+    <tr><td align="center">DC_BankingATMBlue</td></tr>
+    <tr><td align="center">DC_BankingATMDarkGreen</td></tr>
+    <tr><td align="center">DC_BankingATMDarkBlue</td></tr>
+    <tr><td align="center">DC_BankingATMOrange</td></tr>
+    <tr><td align="center">DC_BankingATMYellow</td></tr>
+    <tr><td align="center">DC_BankingATMPurple</td></tr>
+    <tr><td align="center">DC_BankingATMWhite</td></tr>
+    <tr><td align="center">DC_BankingATMGray</td></tr>
   </tbody>
 </table>
 
@@ -103,7 +103,7 @@ A more in-depth description of how to spawn objects in general using this method
 
 ### Example Locations
 The following are some example locations for ATMs that you can use to get started:
-<table>
+<table  align="center">
   <thead>
     <tr>
       <th>Location Name</th>
@@ -113,69 +113,69 @@ The following are some example locations for ATMs that you can use to get starte
   </thead>
   <tbody>
     <tr>
-      <td>Green Mountain 1</td>
-      <td>"3706.7 402.012 5984.86"</td>
-      <td>"90 0 0"</td>
+      <td align="center">Green Mountain 1</td>
+      <td align="center">"3706.7 402.012 5984.86"</td>
+      <td align="center">"90 0 0"</td>
     </tr>
     <tr>
-      <td>Green Mountain 2</td>
-      <td>"3704.7 402.332 6003.1"</td>
-      <td>"275 0 0"</td>
+      <td align="center">Green Mountain 2</td>
+      <td align="center">"3704.7 402.332 6003.1"</td>
+      <td align="center">"275 0 0"</td>
     </tr>
      <tr>
-      <td>Kumyrna 1</td>
-      <td>"8360.15 292.054 5994.15"</td>
-      <td>"325 0 0"</td>
+      <td align="center">Kumyrna 1</td>
+      <td align="center">"8360.15 292.054 5994.15"</td>
+      <td align="center">"325 0 0"</td>
     </tr>
     <tr>
-      <td>Kumyrna 2</td>
-      <td>"8350.7 292.011 5978.3"</td>
-      <td>"235 0 0"</td>
+      <td align="center">Kumyrna 2</td>
+      <td align="center">"8350.7 292.011 5978.3"</td>
+      <td align="center">"235 0 0"</td>
     </tr>
     <tr>
-      <td>Stary</td>
-      <td>"6262.1 301.012 7725.4"</td>
-      <td>"35 0 0"</td>
+      <td align="center">Stary</td>
+      <td align="center">"6262.1 301.012 7725.4"</td>
+      <td align="center">"35 0 0"</td>
     </tr>
     <tr>
-      <td>Klen</td>
-      <td>"11477.8 341.941 11341.6"</td>
-      <td>"35 0 0"</td>
+      <td align="center">Klen</td>
+      <td align="center">"11477.8 341.941 11341.6"</td>
+      <td align="center">"35 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Funfair 1</td>
-      <td>"13326.677 6.065 6766.269"</td>
-      <td>"-20 0 0"</td>
+      <td align="center">PMC Trader Funfair 1</td>
+      <td align="center">"13326.677 6.065 6766.269"</td>
+      <td align="center">"-20 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Funfair 2</td>
-      <td>"13345.848 6.0347 6739.655"</td>
-      <td>"75 0 0"</td>
+      <td align="center">PMC Trader Funfair 2</td>
+      <td align="center">"13345.848 6.0347 6739.655"</td>
+      <td align="center">"75 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Funfair 3</td>
-      <td>"13349.243 5.360 6703.152"</td>
-      <td>"160 0 0"</td>
+      <td align="center">PMC Trader Funfair 3</td>
+      <td align="center">"13349.243 5.360 6703.152"</td>
+      <td align="center">"160 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Funfair 4</td>
-      <td>"13324.538 6.166 6765.517"</td>
-      <td>"-20 0 0"</td>
+      <td align="center">PMC Trader Funfair 4</td>
+      <td align="center">"13324.538 6.166 6765.517"</td>
+      <td align="center">"-20 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Prison 1</td>
-      <td>"9164.450 93.925 13163.900"</td>
-      <td>"50 0 0"</td>
+      <td align="center">PMC Trader Prison 1</td>
+      <td align="center">"9164.450 93.925 13163.900"</td>
+      <td align="center">"50 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Prison 2</td>
-      <td>"9172.360 90.937 13229.300"</td>
-      <td>"-45 0 0"</td>
+      <td align="center">PMC Trader Prison 2</td>
+      <td align="center">"9172.360 90.937 13229.300"</td>
+      <td align="center">"-45 0 0"</td>
     </tr>
     <tr>
-      <td>PMC Trader Camp</td>
-      <td>"172.014 472.759 11316.481"</td>
-      <td>"35 0 0"</td>
+      <td align="center">PMC Trader Camp</td>
+      <td align="center">"172.014 472.759 11316.481"</td>
+      <td align="center">"35 0 0"</td>
     </tr>
   </tbody>
 </table>
@@ -199,7 +199,7 @@ In the profile folder, you should find a folder labeled `DC_Banking`. This folde
     <tr>
       <td><b>m_DefaultMaxCurrency</b></td>
       <td>The baseline upper currency limit for all players.</td>
-      <td>"m_DefaultMaxCurrency":&nbsp;10000</td>
+      <td><pre lang="json">"m_DefaultMaxCurrency": 10000</pre></td>
       <td>
         The actual limit might vary individually based on the set bonus
         <br>
@@ -210,13 +210,13 @@ In the profile folder, you should find a folder labeled `DC_Banking`. This folde
     <tr>
       <td><b>m_StartCurrency</b></td>
       <td>The amount of currency players start with in their account.</td>
-      <td>"m_StartCurrency":&nbsp;500</td>
+      <td><pre lang="json">"m_StartCurrency": 500</pre></td>
       <td>This only applies to player files created after this value has been changed</td>
     </tr>
     <tr>
       <td><b>m_PlaceExcessiveCurrencyOnGround</b></td>
       <td>Decides whether currency that doesn't fit into the inventory of the player should be placed on the ground beneath them or not</td>
-      <td>"m_PlaceExcessiveCurrencyOnGround":&nbsp;0</td>
+      <td><pre lang="json">"m_PlaceExcessiveCurrencyOnGround": 0</pre></td>
       <td>
         Setting it to 0 will place excessive currency in the banking account of the player, which might lead to them storing more than the upper limit in their account
         <br>
@@ -227,48 +227,46 @@ In the profile folder, you should find a folder labeled `DC_Banking`. This folde
     <tr>
       <td><b>m_CreateLogs</b></td>
       <td>Decides whether logs should be created in the script*.log file</td>
-      <td>"m_CreateLogs":&nbsp;1</td>
+      <td><pre lang="json">"m_CreateLogs": 1</pre></td>
       <td></td>
     </tr>
     <tr>
       <td><b>m_MessageDisplayTime</b></td>
       <td>The time in seconds that messages will be displayed for</td>
-      <td>"m_MessageDisplayTime":&nbsp;5.0</td>
+      <td><pre lang="json">"m_MessageDisplayTime": 5.0</pre></td>
       <td></td>
     </tr>
     <tr>
       <td><b>m_TransactionDelayTime</b></td>
       <td>The time in seconds that players will need to wait between transactions</td>
-      <td>"m_TransactionDelayTime":&nbsp;1.5</td>
+      <td><pre lang="json">"m_TransactionDelayTime": 1.5</pre></td>
       <td>Lower times allow players to spam transactions in quick succession, which could cause issues when set to a very low value.</td>
     </tr>
     <tr>
       <td><b>m_BankingCurrencyArray</b></td>
       <td>An array that contains the data of the accepted currency</td>
-      <td>
-      "m_BankingCurrencyArray":&nbsp;[<br>
-        &emsp;{<br>
-        &emsp;&emsp;"m_ClassName":&nbsp;"MoneyRuble100",<br>
-        &emsp;&emsp;"m_Value":&nbsp;100<br>
-        &emsp;},<br>
-        &emsp;{<br>
-        &emsp;&emsp;"m_ClassName":&nbsp;"MoneyRuble50",<br>
-        &emsp;&emsp;"m_Value":&nbsp;50<br>
-        &emsp;}<br>
-      ]
-      </td>
+      <td><pre lang="json">"m_BankingCurrencyArray": [
+    {
+        "m_ClassName": "MoneyRuble100",
+        "m_Value": 100
+    },
+    {
+        "m_ClassName": "MoneyRuble50",
+        "m_Value": 50
+    }
+]</pre></td>
       <td>Each entry consists of a block of <b><i>m_ClassName</i></b> and <b><i>m_Value</i></b>, with each block being separated by a comma</td>
     </tr>
     <tr>
       <td><b>m_ClassName</b></td>
       <td>The class name of the currency item</td>
-      <td>"m_ClassName":&nbsp;"MoneyRuble25"</td>
+      <td><pre lang="json">"m_ClassName": "MoneyRuble25"</pre></td>
       <td></td>
     </tr>
     <tr>
       <td><b>m_Value</b></td>
       <td>The value of a currency item</td>
-      <td>"m_Value":&nbsp;25</td>
+      <td><pre lang="json">"m_Value": 25</pre></td>
       <td></td>
     </tr>
   </tbody>
@@ -290,25 +288,25 @@ Similarly to the config, the player data is also stored in the `DC_Banking` fold
     <tr>
       <td><b>m_PlainID</b></td>
       <td>The steamID64 of the player</td>
-      <td>"m_PlainID":&nbsp;"76561198048233208"</td>
+      <td><pre lang="json">"m_PlainID": "76561198048233208"</pre></td>
       <td>This doesn't need to be edited manually, as it gets set with the creation of the file</td>
     </tr>
     <tr>
       <td><b>m_Username</b></td>
       <td>The name used when the player last interacted with an ATM</td>
-      <td>"m_Username":&nbsp;"Survivor"</td>
+      <td><pre lang="json">"m_Username": "Survivor"</pre></td>
       <td>This doesn't need to be edited manually, as it gets updated every time the player interacts with an ATM</td>
     </tr> 
     <tr>
       <td><b>m_OwnedCurrency</b></td>
       <td>The amount of currency the player currently has in their account</td>
-      <td>"m_OwnedCurrency":&nbsp;5622</td>
+      <td><pre lang="json">"m_OwnedCurrency": 5622</pre></td>
       <td></td>
     </tr>
     <tr>
       <td><b>m_MaxOwnedCurrencyBonus</b></td>
       <td>An individual bonus on top of <b><i>m_DefaultMaxCurrency</i></b> for the maximum currency limit</td>
-      <td>"m_MaxOwnedCurrencyBonus":&nbsp;4000</td>
+      <td><pre lang="json" display="none">"m_MaxOwnedCurrencyBonus": 4000</pre></td>
       <td>
           This is intended to be used as a reward in combination with events or anything of that sort
           <br>
